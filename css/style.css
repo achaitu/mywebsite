@@ -86,13 +86,15 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 
 /*-- banner --*/
 .banner{
-	background: url(../images/1.jpeg) no-repeat 0px 0px;
+    /*height: 100%;*/
+	background: url(../images/1_resize.jpg) no-repeat;
     background-size: cover;
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
-    min-height: 770px;
+    min-height: 1000px;
     position: relative;
 }
 
@@ -100,7 +102,6 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 .banner-text a {
     color: #fff;
     margin-top: 1em;
-    float: right;
     font-size: 17px;
     letter-spacing: 2px;
     display: inline-block;
@@ -152,8 +153,7 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
     font-weight: 900;
     text-transform: uppercase;
     font-family: 'Cinzel Decorative', cursive;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0.27);
-    background: -webkit-linear-gradient(transparent, transparent), url(../images/banner-t.jpg) repeat -203px -382px;
+    -webkit-text-fill-color: rgb(40, 225, 195);
     background: -o-linear-gradient(transparent, transparent);
     -webkit-background-clip: text;
 }
@@ -174,12 +174,7 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 
 /*-- Main Styling --*/
 
-.about-section,
-.contact-form,
-.works-section,
-.services-section,
-.clients-section,
-.stats {
+.about-section{
     padding: 6em 0;
 }
 
@@ -224,14 +219,16 @@ h4.white {
     height: 40px;
     font-size: 40px;
     line-height: 40px;
+    /*transform: translate(-50%, -50%);*/
     -webkit-animation: bounce 2s infinite ease-in-out;
 }
 .click-to-bottom i {
     color: #fff;
-    padding: 15px 12px;
+    padding: 10px 7px;
     border: 2px solid #fff;
     border-radius: 10px;
     font-size: 20px;
+    transform: translate(-50%, -50%);
 }
 @-webkit-keyframes bounce {
 	0%, 20%, 60%, 100%  { -ms-transform: translateY(0); }
@@ -277,7 +274,7 @@ h4.white {
     right: -9%;
 }
 
-.pos-grid-agileinfo span.fa {
+.pos-grid-agileinfo span.fa,.pos-grid-agileinfo span.fab {
     font-size: 6em;
     text-align: center;
     line-height: 133px;
@@ -285,7 +282,7 @@ h4.white {
 }
 
 .pos-grid-agileinfo img,
-.pos-grid-agileinfo span.fa {
+.pos-grid-agileinfo span.fa,.pos-grid-agileinfo span.fab {
     width: 150px;
     height: 150px;
     padding: 10px;
@@ -1047,8 +1044,6 @@ iframe {
     .banner-text h2 {
         font-size: 5em;
         letter-spacing: 2px;
-        -webkit-text-fill-color: rgba(255, 255, 255, 0.27);
-        background: -webkit-linear-gradient(transparent, transparent), url(../images/banner-t.jpg) repeat -156px -311px;
         background: -o-linear-gradient(transparent, transparent);
         -webkit-background-clip: text;
         background-size: 1440px;
@@ -1133,7 +1128,8 @@ iframe {
 @media screen and (max-width: 1080px){
 
     .banner-text h2 {
-        font-size: 6em;
+        font-size: 4.9em;
+        letter-spacing: 7px;
     }
     .banner-text a {
         font-size: 15px;
@@ -1141,10 +1137,6 @@ iframe {
     }
     .banner-text h3 {
         font-size: 1.8em;
-    }
-
-    .banner-text h2 {
-        letter-spacing: 7px;
     }
 
 	nav.navbar.navbar-default.navbar-fixed-top {
@@ -1182,11 +1174,11 @@ iframe {
 }
 @media screen and (max-width: 1050px){
     .pos-grid-agileinfo img,
-    .pos-grid-agileinfo span.fa {
+    .pos-grid-agileinfo span.fa,.pos-grid-agileinfo span.fab {
         width: 125px;
         height: 125px;
     }
-    .pos-grid-agileinfo span.fa {
+    .pos-grid-agileinfo span.fa,.pos-grid-agileinfo span.fab {
         font-size: 4em;
         line-height: 106px;
     }
@@ -1202,6 +1194,21 @@ iframe {
     .pos-grid-agileinfo {
         right: -12%;
     }
+     .banner-text h2 {
+        letter-spacing: 3px;
+        font-size: 4.9em;
+    }
+    .banner-text h3 {
+        font-size: 1.5em;
+    }
+    .banner-text {
+        padding: 8em 0 0 0;
+    }
+    .banner {
+        min-height: 530px;
+        background-position: -180px 0px;
+    }
+
     .about-left-mydesign {
         padding: 3em 4em;
     }
@@ -1225,6 +1232,9 @@ iframe {
     .banner-text h2 {
         letter-spacing: 3px;
         font-size: 4.9em;
+        background: -o-linear-gradient(transparent, transparent);
+        -webkit-background-clip: text;
+        background-size: 991px;
     }
     .banner-text h3 {
         font-size: 1.5em;
@@ -1234,13 +1244,7 @@ iframe {
     }
     .banner {
         min-height: 530px;
-    }
-    .banner-text h2 {
-        -webkit-text-fill-color: rgba(255, 255, 255, 0.27);
-        background: -webkit-linear-gradient(transparent, transparent), url(../images/banner-t.jpg) repeat -82px -206px;
-        background: -o-linear-gradient(transparent, transparent);
-        -webkit-background-clip: text;
-        background-size: 991px;
+        background-position: -180px 0px;
     }
 
     .pos-grid-agileinfo {
@@ -1302,6 +1306,11 @@ iframe {
     .about-left-mydesign ul li span {
         font-size: 14px;
     }
+
+    .banner{
+        background-position: -200px 0px;
+    }
+
     .about-left-mydesign ul li,
     .about-left-mydesign ul li a {
         font-size: 13.4px;
@@ -1327,6 +1336,10 @@ iframe {
         font-size: 14px;
         letter-spacing: 1.5px;
     }
+
+    .banner{
+        background-position: -220px 0px;
+    }
     .about-section,
     {
         padding: 3.5em 0;
@@ -1351,6 +1364,19 @@ iframe {
     .about-left-mydesign {
         margin-top: 0em;
     }
+     .banner-text {
+        padding: 6em 0 0 0;
+    }
+    .banner-text a{
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    float: right;
+    margin-right: -2em;
+    }
+
+    .banner{
+        background-position: -250px 0px;
+    }
 
 	nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 		padding: 1em 2em;
@@ -1363,6 +1389,17 @@ iframe {
 	.navbar-default .navbar-nav > li > a {
 		text-align: center;
 	}
+
+    .banner-text a{
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    float: right;
+    margin-right: -2em;
+    }
+
+    .banner{
+        background-position: -270px 0px;
+    }
 	.navbar-default .navbar-toggle {
 		border-color: #fff;
 	}
@@ -1424,6 +1461,10 @@ iframe {
         padding: 5.5em 0 0 0;
     }
 
+    .banner{
+        background-position: -300px 0px;
+    }
+
 	.gallery-top figure.effect-bubba h4 {
 		padding-top: 0%;
 	}
@@ -1451,6 +1492,11 @@ iframe {
 	.banner, .agileinfo-dot {
 		min-height: 550px;
 	}
+
+    .banner{
+        background-position: -300px 0px;
+    }
+
 	.about h3, .skills h3, .map h3 {
 		font-size: 30px;
 	}
@@ -1465,6 +1511,10 @@ iframe {
 @media screen and (max-width: 600px){
     .pos-grid-agileinfo h5 {
         font-size: 20px;
+    }
+
+    .banner{
+        background-position: -300px 0px;
     }
 
     .about-left-mydesign h6 {
@@ -1487,6 +1537,21 @@ iframe {
     .banner-text h2 {
         font-size: 3.4em;
     }
+
+    .banner{
+        background-position: -350px 0px;
+    }
+    .banner-text h3 {
+        font-size: 1.1em;
+        letter-spacing: 2px;
+    }
+    .banner-text {
+        padding: 4em 0 0 0;
+    }
+    .banner-text a {
+        font-size: 13px;
+    }
+
 	.banner, .agileinfo-dot {
 		min-height: 500px;
 	}
@@ -1502,7 +1567,7 @@ iframe {
 	span.myfont {
 		padding: 18px;
 		font-size: 16px;
-	}
+	}/*
 	.click-to-bottom i {
 		padding: 12px 10px;
 	}
@@ -1511,7 +1576,7 @@ iframe {
 		width: 30px;
 		height: 30px;
 		font-size: 35px;
-	}
+	}*/
 }
 @media screen and (max-width: 480px){
     .about-info p {
@@ -1520,10 +1585,11 @@ iframe {
         letter-spacing: .5px;
     }
 
+    .banner{
+        background-position: -400px 0px;
+    }
     .banner-text h2 {
         font-size: 2.8em;
-        -webkit-text-fill-color: rgba(255, 255, 255, 0.27);
-        background: -webkit-linear-gradient(transparent, transparent), url(../images/banner-t.jpg) repeat 1px -489px;
         background: -o-linear-gradient(transparent, transparent);
         -webkit-background-clip: text;
         background-size: 600px;
@@ -1604,6 +1670,9 @@ iframe {
         width: 35%;
     }
 
+    .banner{
+        background-position: -450px 0px;
+    }
     .banner-text h2 {
         font-size: 2.4em;
     }
@@ -1632,20 +1701,25 @@ iframe {
 	ul.top-links {
 		margin-top: 0em;
 	}
-	.banner {
-		background: url(../images/1.jpeg) no-repeat -182px 0px;
-		background-size: cover;
-	}
+	
 }
 @media screen and (max-width: 384px){
     .banner-text h2 {
+        margin-top: 10px;
         font-size: 2.25em;
-        -webkit-text-fill-color: rgba(255, 255, 255, 0.27);
-        background: -webkit-linear-gradient(transparent, transparent), url(../images/banner-t.jpg) repeat 40px -502px;
         background: -o-linear-gradient(transparent, transparent);
         -webkit-background-clip: text;
         background-size: 414px;
+        font-size: 1.85em;
     }
+    .banner{
+        background-position: -480px 0px;
+    }
+    .banner-text h3 {
+        font-size: 1em;
+        letter-spacing: 1px;
+    }
+
 	nav.navbar.navbar-default.navbar-fixed-top {
 		padding: .3em 1em 0;
 	}
@@ -1662,8 +1736,44 @@ iframe {
     .about-left-mydesign ul li span {
         width: 42%;
     }
+    .banner-text h2 {
+        margin-top: 10px;
+        font-size: 2.25em;
+        background: -o-linear-gradient(transparent, transparent);
+        -webkit-background-clip: text;
+        background-size: 414px;
+        font-size: 1.85em;
+    }
+    .banner{
+        background-position: -510px 0px;
+    }
+    .banner-text h3 {
+        font-size: 1em;
+        letter-spacing: 1px;
+    }
+
+    nav.navbar.navbar-default.navbar-fixed-top {
+        padding: .3em 1em 0;
+    }
 }
 @media screen and (max-width: 320px){
+    .banner-text h2 {
+        margin-top: 10px;
+        font-size: 2.25em;
+        background: -o-linear-gradient(transparent, transparent);
+        -webkit-background-clip: text;
+        background-size: 414px;        
+        font-size: 1.85em;
+
+    }
+    .banner{
+        background-position: -530px 0px;
+    }
+    .banner-text h3 {
+        font-size: 1em;
+        letter-spacing: 1px;
+    }
+
 
     .about-section,
     {
@@ -1689,13 +1799,6 @@ iframe {
         line-height: 22px;
     }
 
-    .banner-text h3 {
-        font-size: 1em;
-        letter-spacing: 1px;
-    }
-    .banner-text h2 {
-        font-size: 1.85em;
-    }
 	.about-left h3 {
 		width: 25%;
 	}
